@@ -10,6 +10,8 @@ function DIController($scope, $filter) {
   $scope.systemResponse = "";
   $scope.checkIfTooMuch = function() {
     var count = $scope.insertedText.split(',').length;
+    if (count < 1)
+      $scope.systemResponse = "Please enter data first";
     if (count < 4)
       $scope.systemResponse = "Enjoy!";
     else
