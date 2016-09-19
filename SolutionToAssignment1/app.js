@@ -6,6 +6,10 @@ angular.module('DIApp', [])
 
 DIController.$inject = ['$scope', '$filter'];
 function DIController($scope, $filter) {
+  $scope.checkIfTooMuch = function() {
+    alert("123");
+  }
+  
   $scope.name = "Yaakov";
 
   $scope.upper = function () {
