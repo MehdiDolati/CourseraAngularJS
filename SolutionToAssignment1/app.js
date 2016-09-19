@@ -6,15 +6,10 @@ angular.module('DIApp', [])
 
 DIController.$inject = ['$scope', '$filter'];
 function DIController($scope, $filter) {
+  $scope.insertedText = "";
+  $scope.systemResponse = "";
   $scope.checkIfTooMuch = function() {
-    alert("123");
+    $scope.systemResponse = $scope.insertedText.split(',');
   }
-  
-  $scope.name = "Yaakov";
-
-  $scope.upper = function () {
-    var upCase = $filter('uppercase');
-    $scope.name = upCase($scope.name);
-  };
 }
 })();
