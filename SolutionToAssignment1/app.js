@@ -13,5 +13,4 @@ function DIController($scope, $filter) {
     $scope.name = upCase($scope.name);
   };
 }
-
 })();
