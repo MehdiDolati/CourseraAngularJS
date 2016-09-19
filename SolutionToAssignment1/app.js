@@ -9,7 +9,8 @@ function DIController($scope, $filter) {
   $scope.insertedText = "";
   $scope.systemResponse = "";
   $scope.checkIfTooMuch = function() {
-    $scope.systemResponse = $scope.insertedText.split(',');
+    var count = $scope.insertedText.split(',').lenght;
+    $scope.systemResponse = count;
   }
 }
 })();
